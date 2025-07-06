@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly:AssemblyConfiguration("")]
 [assembly:AssemblyCompany("MS")]
 [assembly:AssemblyProduct("VirtualDesktop")]
-[assembly:AssemblyCopyright("© Markus Scholtes 2025")]
+[assembly:AssemblyCopyright("ï¿½ Markus Scholtes 2025")]
 [assembly:AssemblyTrademark("")]
 [assembly:AssemblyCulture("")]
 [assembly:AssemblyVersion("1.20.0.0")]
@@ -559,7 +559,7 @@ namespace VirtualDesktop
 			}
 
 			// direct desktop to give away focus
-			ShowWindow(hWnd, SW_MINIMIZE);
+			// ShowWindow(hWnd, SW_MINIMIZE);
 		}
 
 		public Desktop Left
