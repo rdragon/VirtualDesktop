@@ -1213,7 +1213,15 @@ namespace VDeskTool
 										rc = iParam;
 										try
 										{ // activate virtual desktop iParam
-											VirtualDesktop.Desktop.FromIndex(iParam).MakeVisible();
+											var currentNumber = VirtualDesktop.Desktop.FromDesktop(VirtualDesktop.Desktop.Current);
+											if (currentNumber == iParam)
+											{
+												if (verbose) Console.WriteLine("Not switching because this is the current desktop.");
+											}
+											else
+											{
+												VirtualDesktop.Desktop.FromIndex(iParam).MakeVisible();
+											}
 										}
 										catch
 										{ // error while activating
